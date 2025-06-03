@@ -60,31 +60,42 @@
   <div class="projects-grid">
 
     <div class="project-card">
-      <img src="Screenshot_1.png" alt="Project 1">
+      <img src="Screenshot_1.png" alt="Project 1" class="clickable-img">
       <h3>Project Title 1</h3>
       <p>This project shows the categorized Border.</p>
     </div>
 
     <div class="project-card">
-      <img src="Screenshot_2.png" alt="Project 2">
+      <img src="Screenshot_2.png" alt="Project 2" class="clickable-img">
       <h3>Project Title 2</h3>
       <p>Anita Magsaysay-Ho is a renowned artist known for her vibrant and expressive artworks that often depict the beauty of Filipino culture and heritage.</p>
     </div>
 
     <div class="project-card">
-      <img src="Screenshot_3.png" alt="Project 3">
+      <img src="Screenshot_3.png" alt="Project 3" class="clickable-img">
       <h3>Project Title 3</h3>
       <p>Enrollment Form for incoming student of STI Pasay-Edsa.</p>
     </div>
 
     <div class="project-card">
-      <img src="Screenshot_4.png" alt="Project 4">
+      <img src="Screenshot_4.png" alt="Project 4" class="clickable-img">
       <h3>Project Title 4</h3>
       <p>A Sample Gadget Store Homepage for customers.</p>
     </div>
 
   </div>
 </section>
+
+<script>
+  // Make all images with class "clickable-img" open in new tab
+  document.querySelectorAll('.clickable-img').forEach(img => {
+    img.style.cursor = 'pointer';
+    img.addEventListener('click', () => {
+      window.open(img.src, '_blank');
+    });
+  });
+</script>
+
 
 
   <script src="script1.js"></script>
